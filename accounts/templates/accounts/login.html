@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<h1 class="section-title">Login</h1>
+	<form action="{% url 'login' %}" class="container mt-5 mb-5" id="login_form" method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+		<small id="emailHelp" class="form-text text-muted">
+            Not a user? <a href="{% url 'signup' %}">Register</a>
+        </small>
+		<input type="submit" class="w-100 text-uppercase btn btn-outline-primary shadow-none" value="Login">
+	</form>
+{% endblock %}

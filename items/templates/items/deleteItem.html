@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<form action="" method="POST">
+		{% csrf_token %}
+		<p>Confirm deletion of item: "{{object.name}}"</p>
+		<button type="submit" class="btn btn-outline-danger shadow-none">Delete</button>
+		<a href="{% url 'home' %}" class="btn btn-outline-primary shadow-none">Cancel</a>
+	</form>
+{% endblock %}

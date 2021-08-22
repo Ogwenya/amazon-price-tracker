@@ -1,0 +1,38 @@
+body{
+	background: #fefefe;
+}
+
+a{
+	text-decoration: none;
+}
+
+.arrow{
+	width: 100px;
+	height: 50px;
+}
+
+#signup_form ul, .helptext{
+	display: none;
+}
+
+@media (min-width: 768px) {
+	#login_form, #signup_form{
+		width: 400px;
+	}
+	
+	.card{
+		width: 45%;
+	}
+
+	.items{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+@media (min-width: 992px){
+	.card{
+		width: 350px;
+	}
+}

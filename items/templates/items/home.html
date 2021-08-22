@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<h3 class="section-title">Track your amazon items.</h3>
+	<p class="fw-light fst-italic">Get to know if the prices of the many items you are tracking have fallen or increased...</p>
+	<p>please create an account or log in and add links to the amazon items you want to track.</p>
+	<div class="mx-auto text-center" id="nav_links">
+	  	<a href="{% url 'login' %}" class="btn btn-sm border border-danger shadow-none rounded-pill text-uppercase px-4 me-2" id="action_button">Login</a>
+	  	<a href="{% url 'signup' %}" class="btn btn-sm border border-danger shadow-none rounded-pill text-uppercase px-4" id="action_button">SignUp</a>
+  	</div>
+{% endblock %}
